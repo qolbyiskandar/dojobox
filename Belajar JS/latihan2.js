@@ -10,20 +10,23 @@ var namaPengunjung=prompt('Silakan masukkan nama kamu', 'Pengunjung');
 document.write('Hai ' + namaPengunjung + ', selamat datang); //tipe data:boolean
 */
 
+//menampilkan popup confirm
 /* 
 var konfirmasi=confirm('apakah anda ingin mengakhiri kelas ini?');
 var hasil=(konfirmasi==true)? 'iya dong' : 'ga deh';
 document.write(hasil)
 */
 
-/*if
+//penggunaan if
+/*
 var angka=parseInt(prompt('masukkan angka: '));
 if(angka>10){
     document.write("bilangan yang dimasukkan lebih dari 10")    
 }
 */
 
-/*if else
+//penggunaan if else
+/*
 var nama=prompt('masukkan nama: ', nama pengunjung);
 if(nama=='qolby'){
     document.write("seorang murid");
@@ -32,7 +35,8 @@ if(nama=='qolby'){
 }
 */
 
-/*nested if
+//penggunaan nested if
+/*
 var angka=parseInt(prompt('masukkan angka: '));
 if(nilai%2==0){
     document.write(nilai + " merupakan bil genap")    
@@ -42,7 +46,9 @@ if(nilai%2==0){
     document.write(nilai + " bukan bilangan")    
 */
 
-/* var nilaiKepuasaan = parseInt(prompt("masukkan nilai kepuasaan kamu", "masukkan 0-5"));
+//penggunaan switch case
+/* 
+var nilaiKepuasaan = parseInt(prompt("masukkan nilai kepuasaan kamu", "masukkan 0-5"));
 switch(nilaiKepuasaan){
     case 0:
         document.write('saya sangat kecewa')
@@ -66,6 +72,7 @@ switch(nilaiKepuasaan){
         document.write('tolong masukan angka sesuai range')
 } */
 
+//penggunaan switch case (case menampilkan grade)
 var grade = parseInt(prompt("masukkan nilai kamu", "0-100"));
 switch(true){
     case (grade >= 90):
