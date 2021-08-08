@@ -6,6 +6,25 @@
 4. discount berubah sesuai inputan
 */
 
+var barang=[];
+barang=[
+    {
+        namaBarang:"komputer"
+        jumlah:2
+        harga:1000000
+        discount: 8000000
+        Total:
+    }
+    ]
+function tambahBuku(){
+    var jmlSlotRakBuku=5;
+    var noBuku=1
+    while(noBuku<=jmlSlotRakBuku){
+        var tambah=prompt('Masukkan nama buku ke-' + noBuku + ':')
+        buku.push(tambah);  //menambah data inputan ke array "buku"
+        noBuku++;
+    }
+}
 var dataBarang=[];
 document.write(dataBarang);
 document.write('<br>');
