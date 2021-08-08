@@ -61,10 +61,16 @@ function pinjamBuku(){
 function kembaliBuku(){
     let kembali=parseInt(prompt('Masukkan buku ke berapa yang ingin anda kembalikan :'))
     if(kembali>0 && kembali<=5){
+        if 
+        delete bukuTemp[pinjam-1]   // untuk menghapus nomor urutan buku sesuai yg diinput, -1 untuk menyamakan dgn indeks
+        // untuk memeriksa nilai boolean
+        // alert("Buku tersedia untuk dipinjam")
+    }
+    }else if(kembali>0 && kembali<=5){
         delete bukuTemp[pinjam-1]   // untuk menghapus nomor urutan buku sesuai yg diinput, -1 untuk menyamakan dgn indeks
         // untuk memeriksa nilai boolean
         // alert("Buku tersedia untuk dipinjam")
     }else{
-        alert("Maaf, nomor urutan buku yang anda input tidak tersedia")
+        alert("Maaf, nomor urutan buku yang anda input tidak sesuai")
     }
 }
