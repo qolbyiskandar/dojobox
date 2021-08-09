@@ -51,26 +51,37 @@ function pinjamBuku(){
     let pinjam=parseInt(prompt('Masukkan buku ke berapa yang ingin anda pinjam:'))
     if(pinjam>0 && pinjam<=5){
         delete bukuTemp[pinjam-1]   // untuk menghapus nomor urutan buku sesuai yg diinput, -1 untuk menyamakan dgn indeks
+        alert("Buku yang anda maksud tersedia untuk dipinjam. Jangan lupa kembalikan ya!")
         // untuk memeriksa nilai boolean
         // alert("Buku tersedia untuk dipinjam")
     }else{
-        alert("Maaf, nomor urutan buku yang anda input tidak tersedia")
+        alert("Maaf, di perpustakaan ini hanya ada 5 buku")
     }
 }
 
 function kembaliBuku(){
     let kembali=parseInt(prompt('Masukkan buku ke berapa yang ingin anda kembalikan :'))
     if(kembali>0 && kembali<=5){
-        if 
-        delete bukuTemp[pinjam-1]   // untuk menghapus nomor urutan buku sesuai yg diinput, -1 untuk menyamakan dgn indeks
-        // untuk memeriksa nilai boolean
-        // alert("Buku tersedia untuk dipinjam")
-    }
-    }else if(kembali>0 && kembali<=5){
-        delete bukuTemp[pinjam-1]   // untuk menghapus nomor urutan buku sesuai yg diinput, -1 untuk menyamakan dgn indeks
-        // untuk memeriksa nilai boolean
-        // alert("Buku tersedia untuk dipinjam")
+        if (bukuTemp[kembali-1]!==undefined){
+            alert("Maaf nomor yang anda input tidak sesuai, karena buku tersedia")
+        }else{
+            while(bukuTemp[kembali-1]==undefined ){
+
+            }
+            alert("Terima kasih telah mengembalikan buku")
+        }
     }else{
-        alert("Maaf, nomor urutan buku yang anda input tidak sesuai")
+        alert("Maaf, di perpustakaan ini hanya ada 5 buku")
+    }            
+}
+
+function gantiBuku(){
+    let noBukuGanti=parseInt(prompt('Masukkan nomor urut buku ke berapa yang akan diganti :'))
+    if(noBukuGanti>0 && noBukuGanti<=5){
+        let judulBukuGanti=prompt('Lalu masukkan judul buku pengganti :')
+        buku.splice((noBukuGanti-1),1,judulBukuGanti)
+        alert('Ok, buku telah diganti')
+    }else{
+        alert("Maaf, di perpustakaan ini hanya ada 5 buku")
     }
 }
