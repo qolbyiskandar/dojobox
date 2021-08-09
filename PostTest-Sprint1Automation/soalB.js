@@ -6,25 +6,21 @@
 4. discount berubah sesuai inputan
 */
 
-var barang=[];
-barang=[
-    {
-        namaBarang:"komputer"
-        jumlah:2
-        harga:1000000
-        discount: 8000000
-        Total:
+var barang=[{}];
+// barang=[
+//     {
+//         namaBarang:"komputer"
+//         jumlah:2
+//         harga:1000000
+//         discount: 8000000
+//         Total:
+//     }
+//     ]
+function tambahBarang(){
+    for(noBarang=1;noBarang<=5;noBarang++){
+        let nama=prompt('Masukkan nama barang ke-' + noBarang + ':')
+        let jumlah=parseInt(prompt('Masukkan jumlah ' + nama + ':'))
+        let harga=parseInt(prompt('Masukkan harga satuan ' + nama + ':'))
+        let discount=prompt('Masukkan diskon yang ingin diterapkan :')
+        barang.push(tambah);  // menambah data inputan ke array "buku"
     }
-    ]
-function tambahBuku(){
-    var jmlSlotRakBuku=5;
-    var noBuku=1
-    while(noBuku<=jmlSlotRakBuku){
-        var tambah=prompt('Masukkan nama buku ke-' + noBuku + ':')
-        buku.push(tambah);  //menambah data inputan ke array "buku"
-        noBuku++;
-    }
-}
-var dataBarang=[];
-document.write(dataBarang);
-document.write('<br>');
