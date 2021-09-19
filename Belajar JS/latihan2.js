@@ -1,6 +1,6 @@
 //cek tipe data
 /*
- *var namaVariable=true;
+ var namaVariable=true;
  document.write(typeof(namaVariable)+'<br>'); //tipe data boolean
 */
 
