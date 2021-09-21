@@ -1,5 +1,8 @@
 # dojobox
 untuk pembelajaran automation testing dojobox.id
 
-1. create loadtest.js
-2. update readme.md
+terdiri dari script:
+1. belajar javascript
+2. pre-test dan post-test
+3. challenge javascript
+4. belajar cypress

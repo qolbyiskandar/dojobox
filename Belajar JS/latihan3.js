@@ -1,44 +1,36 @@
-/* var volA=parseInt(prompt('masukkan sisi a:'))
-var volB=parseInt(prompt('masukkan sisi b:'))
+// contoh expression function (harus ada nilai balik)
+var penjumlahan=function(angka1,angka2){
+    var hasil=angka1+angka2
+    // hasil=angka1+angka2
+    return hasil
+}
+document.write(penjumlahan(1,2))
 
-document.write('sisi a adalah ' + volA);
-document.write('sisi b adalah ' + volB);
+var penjumlahan=function(bil1,bil2){
+    return bil1+bil2
+}
+document.write(penjumlahan(5,6) + '<br')
 
-
-// di function, parameter dengan pas di return bisa berbeda 
-function volume(a,b){
-    var volA;
-    volA=a*a*a;
-    var volB;
-    volB=b*b*b;
-
-    var total=volA+volB
-    return total;
-    
-} */
-
-//expression function
-// var penjumlahan=function(angka1,angka2){
-//     var hasil=angka1+angka2
-//     //hasil=angka1+angka2
-//     return hasil
-// }
-// document.write(penjumlahan(1,2))
-
-/* function cetak (a,b){
+// contoh declaration function
+function tambah(a,b){
+    return a+b;
+}
+document.write(tambah(1,2) + '<br')
+ 
+function cetak (a,b){
     document.write('Tagihan pertama= Rp ' +a+'<br>')
     document.write('Tagihan kedua= Rp ' +b+'<br>')
 }
-cetak('3.000.000','4.000.0000') */
+cetak('3.000.000','4.000.0000')
 
-//object
+// contoh object
 var academia={
-    //property
+    // property
     nama:"Qolby",
     kelas:12,
     jurusan:"ips",
 
-    //method
+    // method
     getName: function(){
         document.write('Nama saya adalah '+this.nama)
     },
@@ -46,8 +38,8 @@ var academia={
         document.write('Kelas saya di kelas '+this.kelas)
     },
 };
-//academia.getKelas;
-
+// academia.getKelas;
+// constructor
 function academia(nama,kelas){
     this.nama=nama;
     this.kelas=kelas;

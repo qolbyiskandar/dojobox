@@ -44,3 +44,46 @@ switch(true){
     default:
         document.write('Peringkat kamu adalah E')
 }
+
+// ======================================================
+
+// 4 Agustus 2021
+
+// Aplikasi info data siswa dengan nama TA
+// while
+var no=1;
+while(no<=5){
+    document.write("Nomor induk 1-" + no + " TA-nya adalah Vista" + '<br>')
+    no+=1;
+}
+// for
+for(var i=6;i<=10;i++){
+    document.write("Nomor induk 2-" + i + " TA-nya adalah Intan" + '<br>')
+}
+
+// menghitung volume kubus
+var sisiA=parseInt(prompt('masukkan sisi kubus a:'))
+var sisiB=parseInt(prompt('masukkan sisi kubus b:'))
+
+function volumeKubus(sisi){
+    var volume=sisi*sisi*sisi
+    return volume
+}
+
+// di function, parameter dengan pas di return bisa berbeda 
+function jumlahVolumeKubus(a,b){
+    var volumeKubusA=a*a*a
+    var volumeKubusB=b*b*b
+    var total=a+b
+
+    return total
+}
+ 
+document.write('Sisi kubus A adalah ' + sisiA + '<br>');
+document.write('Sisi kubus B adalah ' + sisiB + '<br>');
+document.write('Volume kubus A adalah ' + volumeKubus(sisiA)+'<br>');
+document.write('Volume kubus B adalah ' + volumeKubus(sisiB)+'<br>');
+document.write('Jumlah volume dua kubus: '+jumlahVolumeKubus(volumeKubus(sisiA),volumeKubus(sisiB))+'<br>')
+
+// ======================================================
+
